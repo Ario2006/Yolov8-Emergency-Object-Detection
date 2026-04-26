@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.next/
+.env
+.env.local
+
+# Data (Total ~10GB)
+train\ data/
+test\ data/
+# Catch any other variations
+*data/
+
+# Uploaded files and outputs
+backend/uploads/
+backend/outputs/
+!backend/uploads/.gitkeep
+!backend/outputs/.gitkeep
+
+# Model files
+*.pt
+*.onnx
+*.weights
+backend/models/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+
+# IDEs
+.vscode/
+.idea/
