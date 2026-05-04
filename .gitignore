@@ -20,11 +20,13 @@ backend/outputs/
 !backend/uploads/.gitkeep
 !backend/outputs/.gitkeep
 
-# Model files
-*.pt
-*.onnx
-*.weights
-backend/models/
+# Model files (allowed for deployment)
+backend/models/*
+!backend/models/*.pt
+!backend/models/*.onnx
+!backend/models/.gitkeep
+!backend/models/best.pt
+!backend/models/best.onnx
 
 # OS files
 .DS_Store
